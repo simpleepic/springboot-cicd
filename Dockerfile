@@ -2,6 +2,8 @@ FROM eclipse-temurin:17-jdk-focal
 
 WORKDIR /app
 
+RUN chmod a+x ./mvnw
+
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
